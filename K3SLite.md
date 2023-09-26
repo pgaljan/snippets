@@ -1,5 +1,5 @@
 # About
-Super lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function and training.  I have documented Virtualbox because it can be freely installed anywhere, runs without elevation, doesn't need a cloud or software subscription, etc.  I believe NAT could be used, but I leverage bridged networks for my lab.  If using virtualbox, it's necessary to create a host-only adapter on any manager node from which you'd like to access the kubernetes dashboard.  Host-only adapters are not necessary for worker nodes.
+Super lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function and training, and does not presume the use of manages K8S or any particular virtual or cloud environment.  I documented Virtualbox because it can be freely installed anywhere, runs without elevation so it can be installed on virtually anywhere.
 <Details>
 <summary>
 Requirements
