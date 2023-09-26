@@ -26,6 +26,7 @@ sudo apt upgrade -y
 sudo apt install -y curl wget
 ```
 #### Install K3S
+*copy function may not work with this snippet*
 ```shell
 curl -sfL https://get.k3s.io | sh -
 sudo systemctl status k3s
@@ -51,10 +52,10 @@ sudo kubectl expose deployment nginx-deployment --type NodePort --port 80
 ```
 #### Verify the Deployment
 ```shell
-ip a | grep "192.168.56"
+ip a | grep "enp" | grep "inet " 
 sudo kubectl get svc nginx-deployment
-curl <ip>:<mapped port>
 ```
+curl http://bridged_ip:mapped_port
 #### Enable the dashboard
 ```shell
 sudo kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
@@ -67,8 +68,9 @@ sudo kubectl get svc -n kubernetes-dashboard
 vi dashboard.yaml
 ```
 #### dashboard yaml contents
+*copy function may not work with this snippet*
 ```yaml
-apiVersion: v1apiVersion: v1
+apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: admin-user
@@ -89,7 +91,7 @@ subjects:
 ```
 #### Create service account. display token
 ```shell
-sudo kubectl create -f k3s-dashboard.yaml
+sudo kubectl create -f dashboard.yaml
 sudo kubectl -n kube-system  create token admin-user
 ```
 #### Get IP and mapped port
@@ -107,7 +109,7 @@ Worker Node
 #### Virtualbox Config (optional)
 2 vCPU, 2GB RAM, 25GB disk\
 NIC 1: Bridged (will have an IP on the same as network your physical machine)\
-Note - second NIC is unnecessary - you will be able to ssh from the manager node if needed.\
+Note - second NIC is unnecessary - you will be able to ssh from the manager node if needed.
 
 #### Prep the Node
 ```shell
@@ -116,6 +118,7 @@ sudo apt upgrade -y
 sudo apt install -y curl wget
 ```
 #### Install K3S
+*copy function may not work with this snippet*
 ```shell
 curl -sfL https://get.k3s.io | sh –
 sudo systemctl status k3s
