@@ -27,7 +27,7 @@ sudo apt install -y curl wget
 ```
 #### Install K3S
 ```shell
-curl -sfL https://get.k3s.io | sh –
+curl -sfL https://get.k3s.io | sh -
 sudo systemctl status k3s
 ```
 #### Configure kubectl
