@@ -1,5 +1,5 @@
 # About
-Super lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function and training, and does not presume the use of manages K8S or any particular virtual or cloud environment.  I documented Virtualbox because it can be freely installed anywhere, runs without elevation so it can be installed on virtually anywhere.
+Super lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function and training, and does not presume the use of Managed K8S or any particular virtual or cloud environment.  I documented Virtualbox because it can be freely installed and runs without elevation so it can be installed on virtually anywhere.
 <Details>
 <summary>
 Requirements
@@ -161,19 +161,24 @@ sudo systemctl status k3s
 ##### Quick Inventory
 ```shell
 clear
+echo "Nodes"
 sudo kubectl get node -o wide
-read -n 1 -r -s -p $'Showing Nodes. Press enter to continue...\n'
+read -n 1 -r -s -p $'Press enter to continue...\n'
 clear
+echo "Pods"
 sudo kubectl get pods --all-namespaces -o wide
-read -n 1 -r -s -p $'Showing Pods. Press enter to continue...\n'
+read -n 1 -r -s -p $'Press enter to continue...\n'
 clear
+echo "Deployments"
 sudo kubectl get deployment --all-namespaces -o wide
-read -n 1 -r -s -p $'Showing Deployment. Press enter to continue...\n'
+read -n 1 -r -s -p $'Press enter to continue...\n'
 clear
+echo "Services"
 sudo kubectl get service --all-namespaces -o wide
-read -n 1 -r -s -p $'Showing Service. Press enter to continue...\n'
+read -n 1 -r -s -p $'Press enter to continue...\n'
 clear
+echo "Replica Sets"
 sudo kubectl get rs --all-namespaces -o wide
-read -n 1 -r -s -p $'Showing Service. Press enter to continue...\n';clear
+read -n 1 -r -s -p $'Press enter to continue...\n';clear
 ```
 </Details>
