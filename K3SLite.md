@@ -1,5 +1,5 @@
 # About
-Lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function and training, and does not presume the use of Managed K8S or any particular virtual or cloud environment.  I documented Virtualbox because it can be freely installed and runs without elevation so it can be installed on virtually anywhere.
+Lightweight, frictionless, ephemeral K3S lab environment for quick tests, exploration of function, and training, based on Ubuntu 2204.  It does not require a cloud subscription and does not presume the use of Managed K8S.  I documented Virtualbox because it can be freely installed and runs without elevation so it can be installed on any machine with 8GB RAM, 8 cores, and 100GB SSD.
 <Details>
 <summary>
 Requirements
