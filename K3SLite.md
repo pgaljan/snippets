@@ -128,6 +128,7 @@ sudo systemctl status k3s
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
 #### Join the cluster
+*copy function may not work with this snippet*
 ```shell
 sudo curl -sfL https://get.k3s.io | K3S_URL=https://<bridged ip>:6443 K3S_TOKEN="<pasted_token>" sh -
 ```
@@ -135,7 +136,7 @@ sudo curl -sfL https://get.k3s.io | K3S_URL=https://<bridged ip>:6443 K3S_TOKEN=
 ```shell
 sudo systemctl enable --now k3s-agent
 ```
-#### Verify the node join
+#### Verify the node join (on manager)
 ```shell
 sudo kubectl get nodes
 ```
