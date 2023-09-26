@@ -105,7 +105,7 @@ In a web browser on the host, go to https://192.168.56.x:3xxxx, paste token.
 <summary>
 Worker Node
 </summary>
-
+ 
 #### Virtualbox Config (optional)
 2 vCPU, 2GB RAM, 25GB disk\
 NIC 1: Bridged (will have an IP on the same as network your physical machine)\
@@ -145,53 +145,4 @@ sudo systemctl enable --now k3s-agent
 sudo kubectl get nodes
 ```
 </Details>
-<Details>
-<summary>
-Frequent Operational Commands
-</summary>
 
-##### Get mapped port for the dashbaord
-```shell
-sudo kubectl get pods,svc -n kubernetes-dashboard
-```
-##### Get the dashboard token
-```shell
-sudo kubectl -n kube-system  create token admin-user
-```
-##### Get Virtualbox Host-only IP address for ssh & dashboard
-```shell
-ip a | grep "inet 192.168.56"
-```
-##### Get summarized IPv4s
-```shell
-ip a | grep "inet "
-```
-##### K3S Status
-```shell
-sudo systemctl status k3s
-```
-##### Quick Inventory
-```shell
-clear
-echo "Nodes"
-sudo kubectl get node -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n'
-clear
-echo "Pods"
-sudo kubectl get pods --all-namespaces -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n'
-clear
-echo "Deployments"
-sudo kubectl get deployment --all-namespaces -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n'
-clear
-echo "Services"
-sudo kubectl get service --all-namespaces -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n'
-clear
-echo "Replica Sets"
-sudo kubectl get rs --all-namespaces -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n'
-clear
-```
-</Details>
