@@ -162,7 +162,10 @@ sudo kubectl -n kube-system  create token admin-user
 ```shell
 ip a | grep "inet 192.168.56"
 ```
-
+##### Get summarized IPv4s
+```shell
+ip a | grep "inet "
+```
 ##### K3S Status
 ```shell
 sudo systemctl status k3s
@@ -188,6 +191,7 @@ read -n 1 -r -s -p $'Press enter to continue...\n'
 clear
 echo "Replica Sets"
 sudo kubectl get rs --all-namespaces -o wide
-read -n 1 -r -s -p $'Press enter to continue...\n';clear
+read -n 1 -r -s -p $'Press enter to continue...\n'
+clear
 ```
 </Details>
