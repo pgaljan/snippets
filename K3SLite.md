@@ -132,6 +132,10 @@ sudo cat /var/lib/rancher/k3s/server/node-token
 ```shell
 sudo curl -sfL https://get.k3s.io | K3S_URL=https://<bridged ip>:6443 K3S_TOKEN="<pasted_token>" sh -
 ```
+#### Reboot
+```shell
+sudo reboot
+```
 #### Start the Agent
 ```shell
 sudo systemctl enable --now k3s-agent
