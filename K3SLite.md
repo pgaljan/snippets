@@ -97,6 +97,7 @@ sudo kubectl -n kube-system  create token admin-user
 ip a | grep "inet 192.168.56"
 sudo kubectl get pods,svc -n kubernetes-dashboard
 ```
+In a web browser on the host, go to https://192.168.56.x:3xxxx, paste token.
 </Details>
 <Details>
 <summary>
