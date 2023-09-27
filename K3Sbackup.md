@@ -2,7 +2,9 @@
 ```shell
 sudo apt-get update
 sudo apt upgrade -y
-sudo apt install -y curl wget
+sudo apt install -y curl wget docker.io
+sudo snap install docker
+sudo docker run hello-world
 ```
 #### Create minio-docker.yaml
 ```shell
