@@ -14,7 +14,7 @@ Also helpful:  [K8S Cheatsheet](https://github.com/pgaljan/blog/blob/main/K8SChe
 ```mermaid
 flowchart LR;
     Host---|Host-Only|Manager01;
-    Manager01---LocalNetwork((LocalNetwork))
+    Manager01---LocalNetwork{{LocalNetwork}}
     LocalNetwork---Worker01
     LocalNetwork---Worker02
     LocalNetwork---Worker03
