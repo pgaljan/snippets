@@ -7,7 +7,8 @@ A demonstrably useful setup should run fairly well on any machine with 8GB RAM, 
   * [Ubuntu Server](https://ubuntu.com/download/server)
   * [Virtualbox](https://www.virtualbox.org/wiki/Downloads) (optional)
 
-Also helpful:  [K8S Cheatsheet](https://github.com/pgaljan/blog/blob/main/K8SCheat.md)
+Also helpful:  [K8S Cheatsheet](https://github.com/pgaljan/blog/blob/main/K8SCheat.md)\
+Note: ubuntu will occasionally hang in vbox on boot with "*Begin: Loading Essential driver ...*".  Just reset the VM
 
 ##### Example VirtualBox Network setup
 
