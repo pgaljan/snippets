@@ -9,15 +9,12 @@ This should run fairly well with limited workers on any machine with 8GB RAM, 4 
 Also helpful:  [K8S Cheatsheet](https://github.com/pgaljan/blog/blob/main/K8SCheat.md)
 
 ```mermaid
-graph TD;
-    Host<-->|Host-Only|Manager01;
-    Manager01<-->Worker01
-    Manager01<-->|Bridged|Worker02
-    Manager01<-->Worker03
-    Worker01<-->Internet
-    Worker02<-->Internet
-    Manager01<-->Internet
-    Worker03<-->Internet
+flowchart LR;
+    Host---|Host-Only|Manager01;
+    Manager01---LocalNetwork((LocalNetwork))
+    LocalNetwork---Worker01
+    LocalNetwork---Worker02
+    LocalNetwork---Worker03
 ```
 
      
