@@ -96,13 +96,13 @@ volumes:
   data2-2:
   data3-1:
 ```
-#### Create minio-docker.yaml
+#### Create minio-nginx.conf
 ```shell
-vi minio-docker.yaml
+vi minio-nginx.conf
 ```
 #### minio-nginx.conf contents
 *copy function may not work with this snippet*
-```json
+```shell
 user  nginx;
 worker_processes  auto;
 
@@ -207,4 +207,8 @@ http {
         }
     }
 }
+```
+##### Start minio
+```shell
+sudo docker compose up -d
 ```
