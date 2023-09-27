@@ -18,7 +18,7 @@ flowchart LR;
     Manager01---LocalNetwork{{LocalNetwork}}
     LocalNetwork---Worker01
     LocalNetwork---Worker02
-    LocalNetwork---Worker..
+    LocalNetwork---Worker0n
     LocalNetwork---minio
     Host -.- LocalNetwork
     Internet(((Internet)))---LocalNetwork
