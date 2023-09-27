@@ -9,7 +9,7 @@ A demonstrably useful setup should run fairly well on any machine with 8GB RAM, 
 
 Also helpful:  [K8S Cheatsheet](https://github.com/pgaljan/blog/blob/main/K8SCheat.md)
 
-##### Network setup
+##### Example VirtualBox Network setup
 
 ```mermaid
 flowchart LR;
