@@ -15,6 +15,7 @@ flowchart LR;
     LocalNetwork---Worker01
     LocalNetwork---Worker02
     LocalNetwork---Worker03
+    Internet---LocalNetwork
 ```
 
      
