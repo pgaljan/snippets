@@ -1,7 +1,7 @@
 # About
 Lightweight, frictionless, ephemeral Ubuntu-based K3S lab environment for quick tests, exploration of function, and training.  It does not require a cloud subscription and does not presume the use of Managed K8S.  I documented Virtualbox because it can be freely installed anywhere, and runs without elevation.  It is optional - any Ubuntu 2204 will work.\
-
-A functionally useful setup should run fairly well on any machine with 8GB RAM, 4 cores, and 100GB SSD.
+\
+A demonstrably useful setup should run fairly well on any machine with 8GB RAM, 4 cores, and 100GB SSD.
 
 ###### Requirements
   * [Ubuntu Server](https://ubuntu.com/download/server)
@@ -19,6 +19,7 @@ flowchart LR;
     LocalNetwork---Worker02
     LocalNetwork---Worker03
     Internet(((Internet)))---LocalNetwork
+    Host -.- Internet
 ```
 
      
