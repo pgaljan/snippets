@@ -2,7 +2,10 @@
 ```shell
 docker run -p [port]:[port] [image]
 ```
-
+##### list images
+```shell
+docker images
+```
 ##### build an image
 ```shell
 docker build .
@@ -23,4 +26,8 @@ docker ps
 ##### list all containers
 ```shell
 docker ps -a
+```
+##### interative shell on container
+```shell
+docker run -it [name]
 ```
