@@ -28,8 +28,5 @@ docker ps -a
 ```
 ##### interative shell on container
 ```shell
-
 docker run -it [name]
 ```
-
-test to see if vscode commit is working
