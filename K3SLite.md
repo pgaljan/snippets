@@ -34,7 +34,6 @@ Manager Node
 2 vCPU, 2GB RAM, 25GB disk\
 NIC 1: Bridged (will have an IP on the same as network your physical machine)\
 NIC 2: Host-only (should have a 192.168.56.x IP - you ssh to this IP from the host)\
-
 #### Prep the VM
 ```shell
 sudo apt-get update
@@ -120,13 +119,11 @@ In a web browser on the host, go to https://192.168.56.x:3xxxx, paste token.
 <Details>
 <summary>
 Worker Node
-</summary>
- 
+</summary> 
 #### Virtualbox Config (optional)
 2 vCPU, 2GB RAM, 25GB disk\
 NIC 1: Bridged (will have an IP on the same as network your physical machine)\
 Note - second NIC is unnecessary - you will be able to ssh from the manager node if needed.
-
 #### Prep the Node
 ```shell
 sudo apt-get update
@@ -161,4 +158,3 @@ sudo systemctl enable --now k3s-agent
 sudo kubectl get nodes
 ```
 </Details>
-
