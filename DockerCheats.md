@@ -6,7 +6,6 @@ docker run [-p<40443>:<443>] [[-d] | <-it>]] [--rm] [--name nginx] <[imageID] | 
 ```docker
 docker build -t nginx:default <path/with/Dockerfile>
 ```
-
 ##### run an image
 ```docker
 docker run -p [port]:[port] <image>
