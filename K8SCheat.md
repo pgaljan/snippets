@@ -1,5 +1,23 @@
 # K8S Cheatsheet
 
+`Chris` should not have bought a `jeep`
+
+```mermaid
+sequenceDiagram
+    Chris->>Seller: Sell me your electric jeep
+    Seller-->>Chris: ok
+    Chris->>Dealer: vibrates
+    Dealer-->>Chris: best we can do is tighten it up
+    Chris->>Dealer: ok
+    Chris->>Dealer: Remote starter and heat pump failed
+    Dealer-->>Chris: we'll see what we can do
+    Chris->>Dealer: ok
+
+```
+## Conclusion
+`Chris` should not have bought an `electric jeep`
+
+
  ##### Get mapped port for the dashboard
 ```shell
 sudo kubectl get pods,svc -n kubernetes-dashboard
