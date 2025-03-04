@@ -35,6 +35,8 @@ You may want to look through some job postings to see which certifications are m
 ## Light Skills
 - Git/Github
 - Markdown
+- JSON
+- UML
 
 ## On-Target Earnings
 On-target is base plus bonus/commission.  Junior roles will have a higher percentage of base.  Bonus percentages move up as the pay increases.
