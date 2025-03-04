@@ -1,0 +1,31 @@
+@startsalt
+{<b> Table Name
+    {
+        {
+        {[Action]|  |
+        ^ Menu ^|
+        ^ Menu ^^ Option 1 ^^ Option 2 ^}
+    }
+      
+    {                             🝖 ▥ ⟳  }
+    
+    {T-
+        ☐ <b>Column|<b>Column |<b>Column |<b> Column | <b>Column
+        ☐ 1Level|  ✅ |  Attribute       |Attribute | Attribute Attribute
+        ++ ☐ 2Level|  ✅ |  Attribute       |Attribute| Attribute Attribute
+        ++ ☐ 2Level|  ⚠️ | Attribute      |Attribute| Attribute Attribute
+        +++ ☐ 3Level|❌| Attribute      |Attribute| Attribute Attribute
+        ☑ 1Level|  ✅ |  Attribute       |Attribute | Attribute Attribute
+        ☐ 1Level|  ✅ |  Attribute       |Attribute | Attribute Attribute
+        ++ ☑ 2Level|  ✅ |  Attribute       |Attribute| Attribute Attribute
+        ++ ☑ 2Level|  ⚠️ | Attribute      |Attribute| Attribute Attribute
+        +++ ☑ 3Level|❌| Attribute      |Attribute| Attribute Attribute
+        ☐ 1Level|  ✅ |  Attribute       |Attribute | Attribute Attribute
+        ++ ☐ 2Level|  ✅ |  Attribute       |Attribute| Attribute Attribute
+        ++ ☐ 2Level|  ✅ | Attribute      |Attribute| Attribute Attribute
+        +++ ☐ 3Level|✅| Attribute      |Attribute| Attribute Attribute
+}
+{.}
+}
+}
+@endsalt
